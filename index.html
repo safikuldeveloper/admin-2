@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Ecom Admin  Bootstrap 5 Template" />
+	<meta property="og:title" content="Ecom Admin  Bootstrap 5 Template" />
+	<meta property="og:description" content="Ecom  Admin  Bootstrap 5 Template" />
+	<meta property="og:image" content="#" />
+	<meta name="format-detection" content="telephone=no">
+    <title>Admin Dashboard</title>
+     <!-- Stylesheets -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/icons/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./assets/icons/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="./assets/icons/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Main Wrapper -->
+    <div id="main-wrapper" class="d-flex">
+        <div class="sidebar">
+                <!-- Sidebar -->
+               <div class="sidebar-header">
+                   <div class="lg-logo"><a href="index.html"><img src="./assets/images/Link.png" alt="logo large"></a></div>
+                   <div class="sm-logo"><a href="index.html"><img src="./assets/images/sm-logo.png" alt="logo small"></a></div>
+               </div>
+               <div class="sidebar-body  custom-scrollbar">
+                    <ul class="sidebar-menu">
+                        <li><a href="index.html" class="text-black sidebar-link active"><i class="fa-solid fa-house"></i><p>Dashboard</p></a></li>
+                        <li><a href="#" class="text-black sidebar-link submenu-parent"><i class="fa-solid fa-list"></i><p>Category <i class="fa-solid fa-chevron-right right-icon"></i></p></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="category-add.html" class="submenu-link"><i class="fa-solid fa-circle me-4 font-size-12"></i><p class="m-0">Add</p></a></li>
+                                <li><a href="category-list.html" class="submenu-link"><i class="fa-solid fa-circle me-4 font-size-12"></i><p class="m-0">List</p></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="text-black sidebar-link submenu-parent"><i class="fa-brands fa-microsoft"></i><p>Products <i class="fa-solid fa-chevron-right right-icon"></i></p></a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="product-add.html" class="submenu-link"><i class="fa-solid fa-circle me-4 font-size-12"></i><p class="m-0">Add</p></a></li>
+                                <li><a href="product-list.html" class="submenu-link"><i class="fa-solid fa-circle me-4 font-size-12"></i><p class="m-0">List</p></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="text-black sidebar-link"><i class="fa-solid fa-phone"></i><p>Help & Support</p></a></li>
+                    </ul>
+               </div>
+        </div>
+       <!-- Content Wrapper -->
+        <div class="content-wrapper">
+            <!-- Header -->
+            <div class="header d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <div class="collapse-sidebar me-3 d-none d-lg-block text-color-1"><span><i class="fa-solid fa-bars font-size-24"></i></span></div>
+                    <div class="menu-toggle me-3 d-block d-lg-none text-color-1"><span><i class="fa-solid fa-bars font-size-24"></i></span></div>
+                    <div class="d-none d-md-block d-lg-block">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-white " id="addon-wrapping"><i class="fa-solid search-icon fa-magnifying-glass text-color-1"></i></span>
+                            <input type="text" class="form-control search-input border-l-none ps-0" placeholder="Search anything" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="nav d-flex align-items-center">
+                        <!-- Messages Dropdown -->
+                        <li class="nav-item me-2-5">
+                            <a href="#" class="text-color-1 position-relative"  role="button" 
+                            data-bs-toggle="dropdown" 
+                            data-bs-offset="0,0" 
+                            aria-expanded="false">
+                            <i class="fa-regular fa-message font-size-24"></i>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-end mt-4">
+                                <div id="chatmessage" class="h-380 scroll-y p-3 custom-scrollbar">
+                                    <!-- Chat Timeline -->
+                                    <ul class="timeline">
+                                        <!-- Item 1 -->
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/avatar-1.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">We talked about a project...</h6>
+                                                    <small class="d-block"><i class="fa-solid fa-clock"></i> 30 min ago</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Item 2 -->
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/avatar-2.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">You sent an email to the client...</h6>
+                                                    <small class="d-block"><i class="fa-solid fa-clock"></i> 1 hour ago</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Item 3 -->
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/avatar-3.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Meeting with the design team...</h6>
+                                                    <small class="d-block"><i class="fa-solid fa-clock"></i> 2 hours ago</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Item 4 -->
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/avatar-4.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Reviewed the project documents...</h6>
+                                                    <small class="d-block"><i class="fa-solid fa-clock"></i> Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Item 5 -->
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/avatar-5.jpg">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Finalized the project timeline...</h6>
+                                                    <small class="d-block"><i class="fa-solid fa-clock"></i> 2 days ago</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="all-notification" href="#">See all message <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- Notifications Dropdown -->
+                        <li class="nav-item me-2-5">
+                            <a href="#" class="text-color-1 notification" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                data-bs-offset="0,0" 
+                                aria-expanded="false">
+                                <i class="fa-regular fa-bell font-size-24"></i>
+                                <div class="marker"></div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end mt-4">
+                                <div id="Notification" class="h-380 scroll-y p-3 custom-scrollbar">
+                                    <!-- Notifications Timeline -->
+                                    <ul class="timeline">
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/profile.png">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Dr Smith uploaded a new report</h6>
+                                                    <small class="d-block">10 December 2023 - 08:15 AM</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2 media-info">
+                                                    AP
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">New Appointment Scheduled</h6>
+                                                    <small class="d-block">10 December 2023 - 09:45 AM</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2 media-success">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Patient checked in at reception</h6>
+                                                    <small class="d-block">10 December 2023 - 10:20 AM</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2">
+                                                    <img alt="image" width="50" src="./assets/images/profile.png">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Dr Alice shared a prescription</h6>
+                                                    <small class="d-block">10 December 2023 - 11:00 AM</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2 media-danger">
+                                                    EM
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Emergency Alert: Critical Patient</h6>
+                                                    <small class="d-block">10 December 2023 - 11:30 AM</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-panel">
+                                                <div class="media me-2 media-primary">
+                                                    <i class="fa fa-calendar-alt"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1">Next Appointment Reminder</h6>
+                                                    <small class="d-block">10 December 2023 - 12:00 PM</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <a class="all-notification" href="#">See all notifications <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </li>
+                         <!-- User Profile -->
+                        <li class="nav-item dropdown user-profile">
+                            <div class="d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="user-avatar me-0 me-lg-3">A</span>
+                                <div>
+                                    <a href="#" class="d-none d-lg-block">
+                                        <span class="d-block auth-role">Adminitator</span>
+                                        <span class="auth-name">Adin Lauren</span>
+                                        <span class="ms-2 text-color-1 text-size-sm"><i class="fa-solid fa-angle-down"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="row mb-3 pb-1">
+                    <div class="col-12">
+                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-1 text-color-2">Dashboard</h3>
+                                <p class="text-color-3 mb-0 text-normal">Welcome to Learning Management Dashboard.</p>
+                            </div>
+                            <div class="mt-3 mt-lg-0">
+                                <div class="d-flex align-items-center">
+                                    <!-- Date Range Button -->
+                                     <div class="bg-white d-flex align-items-center text-color-1 px-3 py-2 rounded-2 text-normal fw-bolder letter-spacing-26">
+                                        <i class="fa-solid fa-calendar-days me-3"></i>
+                                        Last 30 Days
+                                       <i class="fa-solid fa-chevron-right ms-3 text-size-sm"></i>
+                                     </div>
+                                    <!-- Reports Button -->
+                                    <div class="ms-3 bg-white bg-primary text-white d-flex align-items-center px-3 py-2 rounded-2 text-normal fw-bolder letter-spacing-26">
+                                      <i class="fa-solid fa-file-invoice me-2"></i>
+                                      Reports
+                                    </div>
+                                  </div>
+                            </div>
+                        </div><!-- end card header -->
+                    </div>
+                    <!--end col-->
+                </div>
+                <div class="mt-4">
+                      <div class="row">
+                          <div class="col-lg-8 mb-4">
+                            <div class="cart-container card p-4">
+                                 <div class="row">
+                                      <div class="col-lg-6">
+                                        <h5 class="card-title text-color-2">Students Enrolment</h5>
+                                        <p class="card-text text-color-3">In last 30 days enrolment of students</p>
+                                        <div class="row">
+                                          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="d-flex">
+                                                <div class="stat-value">5490</div>
+                                                <div class="stat-change negative ms-3">
+                                                <i class="fa-solid fa-arrow-down"></i> 16.93%
+                                                </div>
+                                            </div>
+                                            <small class="text-color-3">This Month</small>
+                                          </div>
+                                          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="d-flex">
+                                                <div class="stat-value">1480</div>
+                                                <div class="stat-change positive ms-3">
+                                                  <i class="fa-solid fa-arrow-up"></i> 4.26%
+                                                </div>
+                                            </div>
+                                            <small class="text-color-3">This Week</small>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <canvas id="enrolmentChart" width="400" height="150"></canvas>
+                                      </div>
+                                 </div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="row">
+                                     <div class="col-lg-6 mb-4">
+                                        <div class="cart-container card p-0">
+                                            <div class="d-flex justify-content-between align-items-center px-4 pt-4">
+                                                <div>
+                                                    <h5 class="card-title text-color-2">Total Sales</h5>
+                                                    <p class="h2 card-value mb-0 text-color-2">$9,495.20</p>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="stat-change positive mb-0">
+                                                        <span><i class="fa-solid fa-arrow-up"></i> 4.63% </span>
+                                                    </p>
+                                                    <span class="d-block text-color-3">vs. last month</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                              <canvas id="salesChart" height="75"></canvas>
+                                            </div>
+                                          </div>
+                                     </div>
+                                     <div class="col-lg-6">
+                                        <div class="cart-container card p-0">
+                                            <div class="d-flex justify-content-between align-items-center px-4 pt-4">
+                                                <div>
+                                                    <h5 class="card-title text-color-2">This week so far</h5>
+                                                    <p class="h2 card-value mb-0 text-color-2">$2,995.81</p>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="stat-change positive mb-0">
+                                                        <span><i class="fa-solid fa-arrow-up"></i> 7.63% </span>
+                                                    </p>
+                                                    <span class="d-block text-color-3">vs. last week</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                              <canvas id="salesChartWeek" height="75"></canvas>
+                                            </div>
+                                          </div>
+                                     </div>
+                                </div>
+                           </div>
+                          </div>
+                          <div class="col-lg-4 mb-4">
+                            <div class="support-request-section">
+                                <div class="card p-0">
+                                  <div class="card-header bg-white d-flex justify-content-between align-items-center py-4">
+                                    <h5 class="mb-0 text-color-2">Support Requests</h5>
+                                    <a href="#" class="text-decoration-none text-color-3">All Requests</a>
+                                  </div>
+                                  <div class="card-body p-0">
+                                    <div class="support-item">
+                                      <div class="support-avatar">
+                                        <img src="./assets/images/avatar-1.jpg" alt="Vincent Lopez">
+                                      </div>
+                                      <div class="support-content">
+                                        <p class="support-name">Vincent Lopez</p>
+                                        <p class="support-message">Thanks for contact us with your issues...</p>
+                                        <p class="support-time">6 min ago</p>
+                                      </div>
+                                    </div>
+                                    <div class="support-item">
+                                      <div class="support-avatar d-flex align-items-center justify-content-center bg-light text-secondary">
+                                        DM
+                                      </div>
+                                      <div class="support-content">
+                                        <p class="support-name">Daniel Moore</p>
+                                        <p class="support-message">Thanks for contact us with your issues...</p>
+                                        <p class="support-time">2 Hours ago</p>
+                                      </div>
+                                    </div>
+                                    <div class="support-item">
+                                      <div class="support-avatar">
+                                        <img src="./assets/images/avatar-2.jpg" alt="Larry Henry">
+                                      </div>
+                                      <div class="support-content">
+                                        <p class="support-name">Larry Henry</p>
+                                        <p class="support-message">Thanks for contact us with your issues...</p>
+                                        <p class="support-time">3 Hours ago</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div class="courses-section card border-0 px-2">
+                                <div class="card-header border-0 bg-white d-flex justify-content-between align-items-center py-3">
+                                  <h5 class="mb-0 text-color-2">Top Courses</h5>
+                                  <div>
+                                    <select class="form-select form-select-sm w-auto border-0 text-color-3" aria-label="Select time period">
+                                        <option value="weekly" selected>Weekly</option>
+                                        <option value="monthly">Monthly</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="card-body">
+                                  <div class="d-flex justify-content-between align-items-center mb-3 py-1">
+                                    <div class="d-flex align-items-center">
+                                      <div class="icon-circle bg-light-primary text-primary me-3">UI/X</div>
+                                      <div>
+                                        <h6 class="mb-0 text-color-2">UI/UX Design with Adobe XD</h6>
+                                        <small class="text-color-3">$85.00</small>
+                                      </div>
+                                    </div>
+                                    <div class="text-end">
+                                      <h6 class="mb-0 text-color-2">$2,125.00</h6>
+                                      <small class="text-color-3">25 Sold</small>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center mb-3 py-1">
+                                    <div class="d-flex align-items-center">
+                                      <div class="icon-circle bg-light-primary text-warning me-3">AD</div>
+                                      <div>
+                                        <h6 class="mb-0 text-color-2">Android App Development</h6>
+                                        <small class="text-color-3">$85.00</small>
+                                      </div>
+                                    </div>
+                                    <div class="text-end">
+                                      <h6 class="mb-0 text-color-2">$2,125.00</h6>
+                                      <small class="text-color-3">25 Sold</small>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center mb-3 py-1">
+                                    <div class="d-flex align-items-center">
+                                      <div class="icon-circle bg-light-primary text-danger me-3">WD</div>
+                                      <div>
+                                        <h6 class="mb-0 text-color-2">Wordpress Development</h6>
+                                        <small class="text-color-3">$85.00</small>
+                                      </div>
+                                    </div>
+                                    <div class="text-end">
+                                      <h6 class="mb-0 text-color-2">$2,125.00</h6>
+                                      <small class="text-color-3">25 Sold</small>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center mb-3 py-1">
+                                    <div class="d-flex align-items-center">
+                                      <div class="icon-circle bg-light-primary text-warning me-3">ML</div>
+                                      <div>
+                                        <h6 class="mb-0 text-color-2">Machine Learning</h6>
+                                        <small class="text-color-3">$85.00</small>
+                                      </div>
+                                    </div>
+                                    <div class="text-end">
+                                      <h6 class="mb-0 text-color-2">$2,125.00</h6>
+                                      <small class="text-color-3">25 Sold</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>                              
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <div class="instructors-section card pb-1">
+                              <div class="card-header bg-white d-flex justify-content-between align-items-center py-4">
+                                <h5 class="mb-0 text-color-2">Top Instructors</h5>
+                                <a href="#" class="text-color-3">View All</a>
+                              </div>
+                              <div class="card-body p-0">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item d-flex align-items-center py-3">
+                                    <div class="avatar rounded-circle bg-primary text-white me-3">AB</div>
+                                    <div class="flex-grow-1">
+                                      <h6 class="mb-0 text-color-2">Sofnio</h6>
+                                      <small class="text-color-3">info@softnio.com</small>
+                                    </div>
+                                    <div class="text-end">
+                                      <span class="text-warning">★★★★★</span>
+                                      <small class="d-block text-color-3">25 Reviews</small>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item d-flex align-items-center py-3">
+                                    <div class="avatar rounded-circle bg-info text-white me-3">AL</div>
+                                    <div class="flex-grow-1">
+                                      <h6 class="mb-0 text-color-2">Ashley Lawson</h6>
+                                      <small class="text-color-3">ashley@softnio.com</small>
+                                    </div>
+                                    <div class="text-end">
+                                      <span class="text-warning">★★★★☆</span>
+                                      <small class="d-block text-color-3">22 Reviews</small>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item d-flex align-items-center py-3">
+                                    <div class="avatar rounded-circle bg-success text-white me-3">JM</div>
+                                    <div class="flex-grow-1">
+                                      <h6 class="mb-0 text-color-2">Jane Montgomery</h6>
+                                      <small class="text-color-3">jane84@example.com</small>
+                                    </div>
+                                    <div class="text-end">
+                                      <span class="text-warning">★★★☆☆</span>
+                                      <small class="d-block text-color-3">19 Reviews</small>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item d-flex align-items-center py-3">
+                                    <div class="avatar rounded-circle bg-secondary text-white me-3">LH</div>
+                                    <div class="flex-grow-1">
+                                      <h6 class="mb-0 text-color-2">Larry Henry</h6>
+                                      <small class="text-color-3">larry108@example.com</small>
+                                    </div>
+                                    <div class="text-end">
+                                      <span class="text-warning">★★★★☆</span>
+                                      <small class="d-block text-color-3">24 Reviews</small>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>                            
+                          </div>
+                          <div class="col-lg-8 mb-4">
+                            <div class="instructors-section card">
+                              <div class="card-body">
+                                <h5 class="text-color-2">Active Students</h5>
+                                <p class="text-color-3">How do your students visit in the time.</p>
+                                <div class="row mt-4">
+                                  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                    <p class="text-color-3">Monthly</p>
+                                    <h4 class="text-color-2">9.28K</h4>
+                                    <p class="stat-change positive mb-0">
+                                      <span><i class="fa-solid fa-arrow-up"></i> 7.63% </span>
+                                    </p>
+                                  </div>
+                                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-md-center justify-content-lg-center">
+                                      <div> 
+                                        <p class="text-color-3">Weekly</p>
+                                        <h4 class="text-color-2">2.69K</h4>
+                                        <p class="stat-change negative mb-0">
+                                          <span><i class="fa-solid fa-arrow-down"></i> 7.63% </span>
+                                        </p>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-md-end justify-content-lg-end">
+                                      <div>
+                                        <p class="text-color-3">Daily (Avg)</p>
+                                        <h4 class="text-color-2">0.94K</h4>
+                                        <p class="stat-change positive mb-0">
+                                          <span><i class="fa-solid fa-arrow-up"></i> 7.63% </span>
+                                        </p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <canvas id="studentsChart" class="mt-5" height="96"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="instructors-section card pb-0">
+                              <div class="card-header border-0 bg-white d-flex justify-content-between align-items-center py-3">
+                                <h5 class="mb-0 text-color-2">Traffic Sources</h5>
+                                <div>
+                                  <select class="form-select form-select-sm w-auto border-0 text-color-3" aria-label="Select time period">
+                                      <option value="30 days" selected>30 days</option>
+                                      <option value="15 days">15 days</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="card-body p-0">
+                                <div class="mb-2">
+                                  <div class="chart-container">
+                                    <canvas id="trafficChart"></canvas>
+                                 </div>
+                                  <div class="mx-5 mt-4 traffic-legend">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="organic text-color-1">Organic Search</span></td>
+                                                <td><span class="text-color-2">4,305</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="referrals text-color-1">Referrals</span></td>
+                                                <td><span class="text-color-2">482</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="social-media text-color-1">Social Media</span></td>
+                                                <td><span class="text-color-2">859</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="others text-color-1">Others</span></td>
+                                                <td><span class="text-color-2">138</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>                                
+                              </div>
+                                <p class="traffic-info mb-0">
+                                    <span class="d-flex justify-content-center align-items-center">
+                                      <i class="info-icon fas fa-info-circle"></i>
+                                    </span>
+                                    <span class="ps-2">
+                                      Traffic channels have been generating the most traffic over the past days.
+                                    </span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div> 
+           </div>
+           <!-- Footer -->
+             <div class="footer text-center bg-white shadow-sm py-3 mt-5">
+                   <p class="m-0">Copyright © 2024. All Rights Reserved. <a href="https://www.templaterise.com/" class="text-primary" target="_blank" >Themes By TemplateRise</a></p>
+             </div>
+        </div>
+    </div>
+     <!-- Scripts -->
+    <script  src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script  src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script  src="./assets/plugin/chart/chart.js"></script>
+    <script  src="./assets/js/chart.js"></script>
+    <script  src="./assets/js/main.js"></script>
+    <!-- <script>
+    const ctx = document.getElementById('enrolmentChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'Enrolment',
+          data: [200, 400, 300, 500, 450, 350, 600],
+          backgroundColor: [
+            '#4caf50', '#4caf50', '#4caf50', '#4caf50', '#4caf50', '#4caf50', '#4caf50',
+          ],
+          borderRadius: 4,
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            enabled: true
+          }
+        },
+        scales: {
+          x: {
+            grid: {
+              display: false
+            }
+          },
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 100
+            }
+          }
+        }
+      }
+    });
+    </script> -->
+
+<script>
+    const ctx = document.getElementById('enrolmentChart').getContext('2d');
+
+    const primaryColor = '#3B71CA';
+    const grayColor = '#EBEEF2';
+
+    const currentDayIndex = 6;
+
+    const enrolmentData = [200, 400, 300, 500, 450, 350, 600];
+
+    const barColors = enrolmentData.map((_, index) =>
+      index === currentDayIndex ? primaryColor : grayColor
+    );
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'Enrolment',
+          data: [200, 400, 300, 500, 450, 350, 600],
+          backgroundColor: barColors,
+          borderRadius: 4,
+          barThickness: 25 
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false // Remove legend
+          },
+          tooltip: {
+            enabled: true // Show tooltips
+          }
+        },
+        scales: {
+          x: {
+            grid: {
+              display: false // Remove vertical grid lines
+            }
+          },
+          y: {
+            grid: {
+              display: false // Remove horizontal grid lines
+            },
+            ticks: {
+              display: false // Hide Y-axis labels
+            }
+          }
+        }
+      }
+    });
+
+
+
+    const ctx1 = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+        datasets: [{
+          label: 'Sales',
+          data: [2000, 2500, 3000, 4950],
+          borderColor: '#007bff',
+          backgroundColor: 'rgba(0, 123, 255, 0.2)',
+          borderWidth: 2,
+          tension: 0.4,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: { display: false },
+          y: { display: false }
+        }
+      }
+    });
+
+    const ctx2 = document.getElementById('salesChartWeek').getContext('2d');
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+        datasets: [{
+          label: 'Sales',
+          data: [4500, 4000, 4200, 4950],
+          borderColor: '#007bff',
+          backgroundColor: 'rgba(0, 123, 255, 0.2)',
+          borderWidth: 2,
+          tension: 0.4,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: { display: false },
+          y: { display: false }
+        }
+      }
+    });
+
+  const ctx3 = document.getElementById('studentsChart').getContext('2d');
+  const studentsChart = new Chart(ctx3, {
+  type: 'bar',
+  data: {
+    labels: Array.from({ length: 30 }, (_, i) => `Day ${i + 1}`),
+    datasets: [{
+      label: 'Daily Active Students',
+      data: [12, 19, 3, 5, 2, 3, 7, 11, 9, 4, 6, 5, 12, 15, 11, 9, 6, 5, 8, 14, 13, 11, 16, 10, 12, 14, 18, 13, 9, 10],
+      backgroundColor: '#3B71CA',
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        enabled: true
+      }
+    },
+    scales: {
+      x: {
+        grid: {
+          display: false
+        },
+        ticks: {
+          callback: function (value, index, ticks) {
+            const labels = this.getLabels();
+            if (index === 0 || index === labels.length - 1) {
+              return labels[index];
+            }
+            return ''; // Hide other labels
+          },
+          display: false 
+        }
+      },
+      y: {
+        grid: {
+          display: true
+        },
+        ticks: {
+          display: false
+        }
+      }
+    }
+  }
+});
+
+
+
+        const ctx4 = document.getElementById('trafficChart').getContext('2d');
+        new Chart(ctx4, {
+            type: 'doughnut',
+            data: {
+                labels: ['Organic Search', 'Referrals', 'Social Media', 'Others'],
+                datasets: [{
+                    data: [4305, 482, 859, 138],
+                    backgroundColor: ['#A78BFA', '#F472B6', '#C084FC', '#FACC15'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                cutout: '70%'
+            }
+        });
+
+  </script>
+
+</body>
+</html>
