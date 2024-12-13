@@ -795,20 +795,59 @@ canvas {
 table tr th {
   padding-top: 18px !important;
   padding-bottom: 18px !important;
+  color: var(--text-color-1) !important;
 }
 
 table tr td {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
+  color: var(--text-color-3) !important;
 }
 
 table tr th:first-child, table tr td:first-child {
   padding-left: 30px !important;
-  /* padding-right: 30px !important; */
 }
 
 table tr th:last-child, table tr td:last-child {
-  /* padding-left: 30px !important; */
   padding-right: 30px !important;
 }
 
+.pagination .page-link {
+  color: var(--text-color-1);
+  border-color: #d9dde4;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.pagination .page-link:hover {
+  color: var(--text-color-1);
+}
+.pagination .active .page-link {
+  background-color: var(--text-color-1);
+  color: #fff;
+  border-color: var(--text-color-1);
+}
+.pagination .page-link {
+  outline: none;
+}
+
+.page-selector {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-color-1);
+  margin-right: 15px;
+}
+.page-selector span {
+  margin: 0 10px;
+}
+.page-selector .form-select {
+  width: 60px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: var(--text-color-1);
+  border-color: #d9dde4;
+}
+.page-selector .form-select:focus {
+  box-shadow: none;
+  border-color: var(--text-color-1);
+}
