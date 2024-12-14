@@ -391,7 +391,7 @@ input::placeholder {
   font-size: .8rem;
 }
 
-.search-input:focus {
+.form-control:focus, .form-select:focus {
   outline: none;
   box-shadow: none;
   border-color: var(--bs-border-color);
@@ -850,4 +850,151 @@ table tr th:last-child, table tr td:last-child {
 .page-selector .form-select:focus {
   box-shadow: none;
   border-color: var(--text-color-1);
+}
+
+.mt-100 {
+  margin-top: 6rem;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.radio-circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d3d3d3;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: #f4a623;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #f4a623;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-label {
+  font-size: 14px;
+  color: #4a4a4a;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.custom-radio input[type="radio"]:checked ~ .radio-label {
+  opacity: 1;
+  font-weight: bold;
+}
+
+
+.file-input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 8px 12px; */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #6c757d;
+  transition: border-color 0.3s ease;
+}
+
+.file-label:hover {
+  border-color: #80bdff;
+}
+
+.file-name {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.file-button {
+  padding: 7px 12px;
+  background-color: #f8f9fa;
+  border-left: 1px solid #ced4da;
+  color: #6c757d;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0 4px 4px 0;
+}
+
+.file-button:hover {
+  background-color: #e9ecef;
+}
+
+.custom-date-input {
+  position: relative;
+}
+
+.custom-input {
+  padding-left: 35px;
+}
+
+.custom-input::placeholder {
+  color: #c5c8cc; /* Placeholder style */
+}
+
+.calendar-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8a9aa9; /* Icon color */
+  pointer-events: none; /* Disable click */
+}
+
+.calendar-icon i {
+  font-size: 14px;
+}
+
+.end-1 {
+  right: 1rem;
 }

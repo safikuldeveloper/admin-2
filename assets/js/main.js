@@ -190,36 +190,6 @@ if (rowCheckboxes) {
 }
 
 
-
-// Initialize CKEditor 5
-if (editor) {
-  ClassicEditor.create(editor)
-    .then(editorInstance => {
-      const editableElement = editorInstance.ui.view.editable.element;
-
-      editableElement.style.minHeight = '300px';
-
-      editableElement.addEventListener('focus', () => {
-        editableElement.style.minHeight = '300px';
-      });
-
-      editableElement.addEventListener('blur', () => {
-        editableElement.style.minHeight = '300px';
-      });
-
-      document.addEventListener('click', (event) => {
-        if (!editableElement.contains(event.target)) {
-          editableElement.style.minHeight = '300px';
-        }
-      });
-
-    })
-    .catch(error => {
-      console.error('Error initializing CKEditor 5', error);
-    });
-}
-
-
 if(dropzone){
   dropzone.addEventListener("dragover", (e) => {
     e.preventDefault();
@@ -579,6 +549,15 @@ const createLoader = () => {
     '<div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>';
   return loader;
 };
+
+
+//  Initialize Quill editor
+if(editor){
+  const quill = new Quill(editor, {
+    theme: 'snow'
+  });
+}
+
 
 
 });
